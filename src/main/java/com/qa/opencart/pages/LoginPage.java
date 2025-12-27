@@ -63,7 +63,7 @@ public class LoginPage {
 	
 	@Step("Login with correct username: {0} and correct {1}")
 	public AccountsPage doLogin(String appUsername, String appPassword) {
-//		System.out.println("Application credentials are: "+ appUsername + " : "+ appPassword);
+//		System.out.println("Application credentials are:: "+ appUsername + " : "+ appPassword);
 		log.info("Application credentials are: "+ appUsername + " : "+ appPassword);
 		eleUtil.waitForElementVisible(email, AppConstants.DEFAULT_SHORT_WAIT).sendKeys(appUsername);
 		eleUtil.doSendKeys(password, appPassword);		

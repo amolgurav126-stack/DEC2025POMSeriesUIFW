@@ -18,7 +18,7 @@ public class ProductInfoPage {
 	private ElementUtil eleutil;
 	Map<String, String> productMap;
 
-	// public constructor
+	// public constructor:
 	public ProductInfoPage(WebDriver driver) {
 		this.driver = driver;
 		eleutil = new ElementUtil(driver);

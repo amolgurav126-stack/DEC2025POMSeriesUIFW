@@ -81,7 +81,7 @@ public class DriverFactory {
 		log.info("Env name =======>"+ envName);
 		try {
 		if(envName==null) {
-			log.warn("Environment is not passed..Hence running tcs on defualt QA environment");
+			log.warn("Environment is not passed...Hence running tcs on defualt QA environment");
 			ip = new FileInputStream("./src/test/resources/config/config.qa.properties"); // make the connection with properties file
 		}
 		else {

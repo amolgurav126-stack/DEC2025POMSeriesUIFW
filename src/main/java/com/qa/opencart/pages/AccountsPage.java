@@ -46,7 +46,7 @@ public class AccountsPage {
 	}
 	
 	public SearchResultsPage doSearch(String searchKey) {
-		System.out.println("Search Key-->"+ searchKey);
+		System.out.println("Search Key---->"+ searchKey);
 		WebElement searchEle = eleutil.waitForElementVisible(search, AppConstants.DEFAULT_SHORT_WAIT);
 		searchEle.clear();
 		searchEle.sendKeys(searchKey);
